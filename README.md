@@ -22,3 +22,12 @@ algo muy simple y hasta estúpido que espero que a más de uno siquiera le resul
 └── users
     └── samuel.nix
 ```
+## 📂 Carpetas
+### `environment`
+Aquí se encuentra mi configuración de escritorio (GNOME) que no tiene nada destacable más allá de que elimina la mayoría de software pre-instalado
+```
+{ pkgs, ... }:
+{
+services.gnome.core-apps.enable = false;
+}
+```
